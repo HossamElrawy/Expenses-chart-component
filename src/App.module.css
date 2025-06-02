@@ -1,0 +1,129 @@
+.upper {
+    height: 125px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.balanceDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: hsl(26, 66%, 93%);
+}
+.balancePara {
+    font-weight: 400;
+    font-size: 18px;
+}
+.balanceNum {
+    width: fit-content;
+    font-weight: 700;
+    font-size: 32px;
+}
+.lower {
+    background-color: white;
+    height: 100%;
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.headline {
+    width: fit-content;
+    color: hsl(25, 47%, 15%);
+    font-size: 33px;
+    font-weight: 700;
+}
+.stats {
+    padding-bottom: 32px;
+    border-bottom: 2px solid hsl(26, 66%, 93%);
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 267px;
+}
+.totalPara {
+    color: hsl(28, 10%, 53%);
+    width: fit-content;
+    font-size: 18px;
+}
+.totalFrom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.totalBal {
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    font-size: 49px;
+}
+.rightEnd {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: end;
+}
+.p {
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+}
+.fromPara {
+    color: hsl(28, 10%, 53%);
+}
+
+.dayDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+    height: 100%;
+}
+@media (max-width : 800px) {
+    .upper {
+        height: 97px;
+        padding: 21px 16px;
+    }
+    .balancePara {
+        font-size: 15px;
+    }
+    .logo {
+        width: 62px;
+    }
+    .balanceNum {
+        font-size: 24px;
+    }
+    .lower {
+        padding: 30px 16px;
+    }
+
+    .headline {
+        width: fit-content;
+        font-size: 24px;
+    }
+    .stats {
+        padding-bottom: 24px;
+        margin-bottom: 20px;
+        min-height: 260px;
+        height: 220px;
+    }
+
+    .totalPara {
+        font-size: 15px;
+    }
+    .totalBal {
+        font-size: 30px;
+    }
+
+    .p {
+        color: hsl(25, 47%, 15%);
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .fromPara {
+        font-size: 14px;
+    }
+}

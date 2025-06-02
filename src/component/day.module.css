@@ -1,0 +1,73 @@
+.dayDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+    height: 100%;
+}
+.percentage {
+    height: 40px;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    color: white;
+}
+.colorDiv {
+    margin: 0 9px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    width: calc(100% - 18px);
+    max-height: 150px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.colorDiv:hover {
+    opacity: 0.7;
+}
+.today {
+    background-color: hsl(186, 34%, 65%);
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.today:hover {
+    opacity: 0.7;
+}
+.day {
+    margin: 0 9px;
+    text-align: center;
+    color: hsl(28, 10%, 53%);
+}
+.toHover {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+    width: 100%;
+}
+.toHover:hover .percentage{
+    display: flex;
+}
+@media (max-width : 800px) {
+    .dayDiv {
+        width: 43px;
+    }
+    .percentage {
+        height: 30px;
+        font-size: 10px;
+    }
+    .colorDiv {
+        margin: 0 6px;
+        width: 33px;
+    }
+    .day {
+        font-size: 12px;
+        margin: 0 6px;
+    }
+}
